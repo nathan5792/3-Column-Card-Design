@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>3-column-preview-card-component</title>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    :root{
+      --Gold-500: hsl(31, 77%, 52%);
+      --Cyan-800: hsl(184, 100%, 22%);
+      --Green-950: hsl(179, 100%, 13%);
+      --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+      --Gray-100-background-heading-buttons: hsl(0, 0%, 95%);
+    }
+    body{
+      background-color: var(--Gray-100-background-heading-buttons);
+      min-height: 100vh;
+      display: grid;
+      place-content: center;
+    }
+    .main{
+      display: flex;
+      max-width: 920px;
+      color: var(--Transparent-white-paragraphs);
+      border-radius: 10px;
+      font-family: "Lexend Deca", sans-serif;
+    }
+    h1{
+      margin: 30px 0 20px;
+      color: var(--Gray-100-background-heading-buttons);
+      font-family: "Big Shoulders Display", sans-serif;
+    }
+    p{
+      line-height: 1.7;
+      font-size: 15px;
+    }
+    
+    .left{
+      background-color: var(--Gold-500);
+      padding: 50px;
+      border-radius: 10px 0 0 10px;
+    }
+    .middle{
+      background-color: var(--Cyan-800);
+      padding: 50px;
+    }
+    .right{
+      background-color: var(--Green-950);
+      padding: 50px;
+      border-radius: 0 10px 10px 0;
+    }
+    .learn1{
+      background-color: var(--Gray-100-background-heading-buttons);
+      margin: 80px 0 0;
+      color: var(--Gold-500);
+      padding: 15px 10px;
+      width: 80%;
+      border-radius: 50px;
+      justify-items: center;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .learn1:hover{
+      border: 3px solid var(--Transparent-white-paragraphs);
+      background-color: var(--Gold-500);
+      color: var(--Transparent-white-paragraphs);
+      padding: 10px 10px;
+    }
+
+     .learn2{
+      background-color: var(--Gray-100-background-heading-buttons);
+      margin: 80px 0 0;
+      color: var(--Cyan-800);
+      padding: 15px 10px;
+      width: 80%;
+      border-radius: 50px;
+      justify-items: center;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .learn2:hover{
+      border: 3px solid var(--Transparent-white-paragraphs);
+      background-color: var(--Cyan-800);
+      margin: 80px 0 0;
+      color: var(--Transparent-white-paragraphs);
+      padding: 10px 10px;
+      width: 80%;
+    }
+
+    .learn3{
+      background-color: var(--Gray-100-background-heading-buttons);
+      margin: 80px 0 0;
+      color: var(--Green-950);
+     padding: 15px 10px;
+      width: 80%;
+      border-radius: 50px;
+      justify-items: center;
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .learn3:hover{
+      border: 3px solid var(--Transparent-white-paragraphs);
+      background-color: var(--Green-950);
+      color: var(--Transparent-white-paragraphs);
+     padding: 10px 10px
+    }
+    @media (max-width: 700px){
+      .main{
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .left{
+        border-radius: 10px 10px 0 0;
+      }
+      .right{
+        border-radius: 0 0 10px 10px;
+    }
+      .learn1{
+        margin-top: 30px;
+      }
+      .learn2{
+        margin-top: 30px;
+      }
+      .learn3{
+        margin-top: 30px;
+      }
+  }
+   
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="left">
+      <img src="./images/icon-sedans.svg" alt="">
+      <h1>SEDANS</h1>
+      <P>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</P>
+      <div class="learn1"><p>Learn More</p></div>
+    </div>
+    <div class="middle">
+       <img src="./images/icon-suvs.svg" alt="">
+      <h1>SUVS</h1>
+      <P>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</P>
+      <div class="learn2"><p>Learn More</p></div>
+    </div>
+    <div class="right">
+       <img src="./images/icon-luxury.svg" alt="">
+      <h1>LUXURY</h1>
+      <P>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style.</P>
+      <div class="learn3"><p>Learn More</p></div>
+    </div>
+  </div>
+</body>
+</html>
