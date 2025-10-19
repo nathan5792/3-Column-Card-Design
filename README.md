@@ -26,7 +26,7 @@ This is my solution to the [3-Column-Component-Preview on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/nathan5792/3-Column-Card-Design.git
 - Live Site URL: https://nathan5792.github.io/3-Column-Card-Design/
 
 ## My process
